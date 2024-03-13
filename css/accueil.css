@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+body{
+    background-color:rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    font-family: 'arial', sans-serif;
+}
+
+h1{
+    font-family: 'arial', sans-serif;
+}
+
+.trait{
+    height: 25px;
+    width: 100%;
+    background-color: black;
+}
+
+
+/** navbar **/
+#navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    transition: top 0.3s ease-in-out;
+    z-index: 9999;
+}
+
+.lien{
+    text-decoration: none ;
+    padding-left: 5%;
+    padding-right: 5%;
+    color : white;
+    transition: color 0.3s ease, font-weight 0.3s ease;
+}
+.lien:hover{
+    color: white;
+    font-weight: bold;
+}
+
+/** Présentation **/
+#presentation{
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+}
+
+#titreP{
+    margin-bottom: 2%;
+}
+
+/* Bio */
+#bio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 25px;
+    background-color: #00a2ff;
+}
+
+#cadreBio{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 125%;
+}
+
+#imgBio{
+    display: block;
+    height: 300px;
+    max-height: 300px;
+    width: 450px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#pBio{
+    display: flex;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    word-wrap: break-word; /* Permet au texte de passer à la ligne si trop long */
+    max-width: 60%; /* Limite la largeur du texte pour éviter qu'il ne dépasse de la div */
+    height: 300px;
+    background-color: rgba(255, 255, 255,0.5);
+    transition: background-color 0.3s ease;
+    overflow: auto;
+    font-family: 'URW Chancery L', cursive;
+}
+
+#pBio:hover{
+    background-color: rgb(255, 255, 255)
+}
+
+/** Languages **/
+#languages{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+#titreL{
+    padding: 2%;
+}
+
+#listeLanguage{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/* Cartes */
+
+.carte{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 225px;
+    width: 200px;
+    background-color: rgba(170, 170, 170,0.5);
+    margin-left: 1% ;
+    margin-right: 1%;
+}
+
+.imageCarte{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-weight: bold;
+    width: 100%;
+    height: 75%;
+}
+
+.texteCarte{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    height: 20%;
+}
+.intitule{
+    height: 10px;
+    font-size: 110%;
+}
+
+.barreLvl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 5%;
+    width: 100%;
+}
+
+.niveau{
+    width: 20%;
+    height: 100%;
+    border: solid black 1px;
+}
+
+.vert{
+    background-color: rgb(0, 211, 0);
+}
+
+/** Projets **/ 
+#projets{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #00a2ff;
+}
+
+#titreP{
+    margin-top: 20px;
+}
+
+#competences{
+    text-decoration: none;
+    font-size: 100%;
+    color: white;
+}
+
+#competences:hover{
+    text-decoration: none;
+    text-decoration: underline;
+    color: white;
+}
+
+#listeProjets{
+    width: 95%;
+}
+
+.cadreProjet{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 125%;
+    background-color: rgba(255, 255, 255,0.5);
+}
+
+.cadresProjet{
+    margin-bottom: 20px;
+}
+
+.pProjet{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    word-wrap: break-word; /* Permet au texte de passer à la ligne si trop long */
+    max-width: 60%; /* Limite la largeur du texte pour éviter qu'il ne dépasse de la div */
+    height: 300px;
+    background-color: rgba(255, 255, 255,0.5);
+    transition: background-color 0.3s ease;
+    overflow: auto;
+    font-family: 'URW Chancery L', cursive;
+}
+
+.pProjet:hover{
+    background-color: rgb(255, 255, 255)
+}
+
+.titreProjet{
+    background-color: rgba(255, 255, 255,0.5);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-bottom: 0;
+}
+
+/** Contacts **/
+#contacts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: solid rgb(238, 255, 0) 2px;
+}
